@@ -1,0 +1,24 @@
+{
+  "name": "zigusdt-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "buysell.ts",
+  "scripts": {
+    "start": "ts-node buysell.ts"
+  },
+  "dependencies": {
+    "@cosmjs/amino": "^0.32.0",
+    "@cosmjs/cosmwasm-stargate": "^0.32.0",
+    "@cosmjs/encoding": "^0.32.0",
+    "@cosmjs/math": "^0.32.0",
+    "@cosmjs/proto-signing": "^0.32.0",
+    "@cosmjs/stargate": "^0.32.0",
+    "dotenv": "^16.3.1",
+    "long": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
