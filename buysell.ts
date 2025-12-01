@@ -20,8 +20,8 @@ const GAS_PRICE = GasPrice.fromString("0.025uzig");
 const DECIMALS = 6;
 
 // Amounts
-const ONE_USDT = (1 * 10 ** DECIMALS).toString();
-const TWENTY_ZIG = (20 * 10 ** DECIMALS).toString();
+const ONE_USDT = (25 * 10 ** DECIMALS).toString();
+const TWENTY_ZIG = (500 * 10 ** DECIMALS).toString();
 
 // -------------------------------------
 
@@ -72,12 +72,12 @@ async function executeSwap(offerDenom: string, offerAmount: string) {
 }
 
 async function buyZig() {
-  console.log("🟢 BUY ZIG: Selling 1 USDT...");
+  console.log("🟢 BUY ZIG: Selling 25 USDT...");
   await executeSwap(USDT_DENOM, ONE_USDT);
 }
 
 async function sellZig() {
-  console.log("🔴 SELL ZIG: Selling 20 ZIG...");
+  console.log("🔴 SELL ZIG: Selling 500 ZIG...");
   await executeSwap(UZIG_DENOM, TWENTY_ZIG);
 }
 
